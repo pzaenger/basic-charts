@@ -1,2 +1,3 @@
 # simple-charts
-Some simple charting stuff with Vega
+
+Simple charting stuff with [Vega](https://vega.github.io/vega/).

@@ -1,0 +1,39 @@
+{
+  "name": "simple-charts",
+  "version": "0.1.0",
+  "description": "Simple charting stuff with Vega",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "start": "tsc && node lib/index.js",
+    "test": "jest --env=node --colors --coverage test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pzaenger/simple-charts.git"
+  },
+  "keywords": [
+    "vega",
+    "visualization"
+  ],
+  "author": "Philipp Zängerling <dev@pzaenger.com> (http://www.pzaenger.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pzaenger/simple-charts/issues"
+  },
+  "homepage": "https://github.com/pzaenger/simple-charts#readme",
+  "files": [
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "vega": "^5.8.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2",
+    "vega-typings": "^0.11.1"
+  }
+}
