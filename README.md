@@ -1,4 +1,4 @@
-# simple-charts
+# basic-charts
 
 This project is intended for learning purposes only and should not be used in any productive environment. However, it can be used to apply user given data to predefined Vega specifications, which can be transformed e.g. into SVG or HTML. The project itself is written in [TypeScript](https://www.npmjs.com/package/typescript) and uses mainly:
 
@@ -10,7 +10,7 @@ This project is intended for learning purposes only and should not be used in an
 ## Installation
 
 ```
-npm install simple-charts
+npm install basic-charts
 ```
 
 ## Documentation
