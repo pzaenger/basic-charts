@@ -1,7 +1,7 @@
 {
-  "name": "simple-charts",
+  "name": "basic-charts",
   "version": "0.0.1",
-  "description": "Simple charting stuff with Vega",
+  "description": "Basic charts with Vega",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pzaenger/simple-charts.git"
+    "url": "git+https://github.com/pzaenger/basic-charts.git"
   },
   "keywords": [
     "vega",
@@ -28,9 +28,9 @@
   "author": "Philipp Zängerling <dev@pzaenger.com> (http://www.pzaenger.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pzaenger/simple-charts/issues"
+    "url": "https://github.com/pzaenger/basic-charts/issues"
   },
-  "homepage": "https://github.com/pzaenger/simple-charts#readme",
+  "homepage": "https://github.com/pzaenger/basic-charts#readme",
   "files": [
     "lib/**/*"
   ],
