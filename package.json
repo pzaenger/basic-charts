@@ -1,12 +1,19 @@
 {
   "name": "simple-charts",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Simple charting stuff with Vega",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "start": "tsc && node lib/index.js",
-    "test": "jest --env=node --colors --coverage test"
+    "start": "npm run build && node lib/index.js",
+    "test": "jest --env=node --colors --coverage test",
+    "build": "tsc",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion" : "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion" : "git push && git push --tags"
   },
   "repository": {
     "type": "git",
@@ -14,7 +21,9 @@
   },
   "keywords": [
     "vega",
-    "visualization"
+    "visualization",
+    "svg",
+    "charts"
   ],
   "author": "Philipp Zängerling <dev@pzaenger.com> (http://www.pzaenger.com/)",
   "license": "MIT",
@@ -26,6 +35,9 @@
     "lib/**/*"
   ],
   "dependencies": {
+    "@hapi/joi": "^16.1.7",
+    "@types/hapi__joi": "^16.0.3",
+    "canvas": "^2.6.0",
     "vega": "^5.8.1"
   },
   "devDependencies": {
