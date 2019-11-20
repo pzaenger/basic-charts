@@ -7,7 +7,7 @@ This project is intended for learning purposes only and should not be used in an
 * [Joi](https://www.npmjs.com/package/@hapi/joi)
 * [Jest](https://www.npmjs.com/package/jest)
 
-## Intallation
+## Installation
 
 ```
 npm install simple-charts
