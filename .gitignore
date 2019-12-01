@@ -44,3 +44,4 @@ fabric.properties
 *.launch
 .settings/
 /lib
+/docs

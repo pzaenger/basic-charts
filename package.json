@@ -1,12 +1,13 @@
 {
   "name": "basic-charts",
-  "version": "0.0.1",
-  "description": "Basic charts with Vega",
+  "version": "0.0.2",
+  "description": "Charts with Vega",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "start": "npm run build && node lib/index.js",
     "test": "jest --env=node --colors --coverage test",
+    "docs": "typedoc --theme minimal --name 'Basic Charts' --hideGenerator --exclude ./src/index.ts --out ./docs ./src",
     "build": "tsc",
     "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
@@ -35,8 +36,6 @@
     "lib/**/*"
   ],
   "dependencies": {
-    "@hapi/joi": "^16.1.7",
-    "@types/hapi__joi": "^16.0.3",
     "canvas": "^2.6.0",
     "vega": "^5.8.1"
   },
@@ -45,6 +44,7 @@
     "jest": "^24.9.0",
     "ts-jest": "^24.1.0",
     "tslint": "^5.20.1",
+    "typedoc": "^0.15.3",
     "typescript": "^3.7.2",
     "vega-typings": "^0.11.1"
   }
